@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: rgb(48, 48, 48);
+}
+
 .section-header{
     color: white;
     font-size: 60px;
