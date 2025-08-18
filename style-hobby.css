@@ -1,0 +1,22 @@
+/* photography */
+.photography{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.photo-container img{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+.photo-container{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 50px;
+}
