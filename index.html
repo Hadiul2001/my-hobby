@@ -1,59 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hobby.com</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Frames & Miles — Hobby Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- photography -->
-    <section class="photography">
-        <div>
-            <div>
-                <h1 class="section-header">Photography</h1>
-            </div>
-            <div class="photo-container">
-                <div>
-                    <img src="./Photography/pg1.jpg" alt="">
-                    <img src="./Photography/pg2.jpg" alt="">
-                    <img src="./Photography/pg3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./Photography/pg4.jpg" alt="">
-                    <img src="./Photography/pg5.jpg" alt="">
-                    <img src="./Photography/pg6.jpg" alt="">
-                </div>
-                <div>
-                    <img src="./Photography/pg7.jpg" alt="">
-                    <img src="./Photography/pg8.jpg" alt="">
-                    <img src="./Photography/pg9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- marathon -->
-    <section class="marathon">
-        <div>
-            <h1 class="section-header">Marathon</h1>
-        </div>
-        <div class="marathon-card-container">
-            <div class="marathon-card">
-                <img src="./Marathon/DM10k.jpg" alt="">
-                    <h2>Time: 1.20 Hour</h2>
-                    <h2>Distance: 10km</h2>
-                    <h2>Place: Dhaka</h2>
-            </div>
-            <div class="marathon-card">
-                <img src="./Marathon/JM7M.jpg" alt="">
-                    <h2>Time: 1 Hour</h2>
-                    <h2>Distance: 7km</h2>
-                    <h2>Place: Jashore</h2>
-            </div>
-        </div>
-    </section>
-</body>
 
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="hero-eyebrow">Portfolio</p>
+            <h1 class="hero-title">Frames<br><em>&amp; Miles</em></h1>
+            <p class="hero-sub">Photography · Marathon · Life in between</p>
+        </div>
+        <div class="hero-scroll-hint">scroll ↓</div>
+    </header>
+
+    <!-- NAV DOTS -->
+    <nav class="section-nav">
+        <a href="#photography" class="nav-dot" title="Photography"><span></span></a>
+        <a href="#marathon" class="nav-dot" title="Marathon"><span></span></a>
+    </nav>
+
+    <!-- ===== PHOTOGRAPHY ===== -->
+    <section id="photography" class="section photography-section">
+
+        <div class="section-label">
+            <span class="label-number">01</span>
+            <span class="label-line"></span>
+            <span class="label-text">Photography</span>
+        </div>
+
+        <!-- FEATURED SHOT -->
+        <div class="featured-block">
+            <div class="featured-img-wrap">
+                <img src="./Photography/pg1.jpg" alt="Featured photograph" class="featured-img">
+                <div class="featured-caption">Featured shot</div>
+            </div>
+            <div class="featured-info">
+                <h2 class="featured-heading">Through the<br><em>lens</em></h2>
+                <p class="featured-body">
+                    Every frame is a frozen moment — a story told in light,
+                    shadow, and the quiet spaces in between.
+                </p>
+            </div>
+        </div>
+
+        <!-- MASONRY GRID -->
+        <div class="photo-grid">
+            <div class="photo-card tall">
+                <img src="./Photography/pg2.jpg" alt="Photo 2">
+                <div class="photo-overlay"><span>pg2</span></div>
+            </div>
+            <div class="photo-card">
+                <img src="./Photography/pg3.jpg" alt="Photo 3">
+                <div class="photo-overlay"><span>pg3</span></div>
+            </div>
+            <div class="photo-card">
+                <img src="./Photography/pg4.jpg" alt="Photo 4">
+                <div class="photo-overlay"><span>pg4</span></div>
+            </div>
+            <div class="photo-card wide">
+                <img src="./Photography/pg5.jpg" alt="Photo 5">
+                <div class="photo-overlay"><span>pg5</span></div>
+            </div>
+            <div class="photo-card">
+                <img src="./Photography/pg6.jpg" alt="Photo 6">
+                <div class="photo-overlay"><span>pg6</span></div>
+            </div>
+            <div class="photo-card tall">
+                <img src="./Photography/pg7.jpg" alt="Photo 7">
+                <div class="photo-overlay"><span>pg7</span></div>
+            </div>
+            <div class="photo-card">
+                <img src="./Photography/pg8.jpg" alt="Photo 8">
+                <div class="photo-overlay"><span>pg8</span></div>
+            </div>
+            <div class="photo-card">
+                <img src="./Photography/pg9.jpg" alt="Photo 9">
+                <div class="photo-overlay"><span>pg9</span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== MARATHON ===== -->
+    <section id="marathon" class="section marathon-section">
+
+        <div class="section-label">
+            <span class="label-number">02</span>
+            <span class="label-line"></span>
+            <span class="label-text">Marathon</span>
+        </div>
+
+        <div class="marathon-intro">
+            <h2 class="marathon-heading">Run the<br><em>distance</em></h2>
+            <p class="marathon-sub">Every kilometer earned. Every finish line, a memory.</p>
+        </div>
+
+        <div class="race-cards">
+
+            <div class="race-card">
+                <div class="race-img-wrap">
+                    <img src="./Marathon/DM10K.png" alt="Dhaka Marathon 10K">
+                    <div class="race-badge">10K</div>
+                </div>
+                <div class="race-body">
+                    <h3 class="race-title">Dhaka Marathon</h3>
+                    <div class="race-stats">
+                        <div class="stat">
+                            <span class="stat-val">1:20</span>
+                            <span class="stat-lbl">hours</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-val">10</span>
+                            <span class="stat-lbl">km</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-val">Dhaka</span>
+                            <span class="stat-lbl">city</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <div class="race-img-wrap">
+                    <img src="./Marathon/JM7M.jpg" alt="Jashore Marathon 7K">
+                    <div class="race-badge">7K</div>
+                </div>
+                <div class="race-body">
+                    <h3 class="race-title">Jashore Marathon</h3>
+                    <div class="race-stats">
+                        <div class="stat">
+                            <span class="stat-val">1:00</span>
+                            <span class="stat-lbl">hours</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-val">7</span>
+                            <span class="stat-lbl">km</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-val">Jashore</span>
+                            <span class="stat-lbl">city</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Frames &amp; Miles &mdash; A hobby portfolio</p>
+    </footer>
+
+</body>
 </html>
